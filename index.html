@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Free Store</title>
+</head>
+<body>
+  <h1>Welcome to My Store!</h1>
+  <p>My first website is live </p>
+</body>
+</html>
+14:53
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Free Store</title>
+
+  <!-- Snipcart JS + CSS -->
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.css" />
+  <script async src="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>My Free Store</h1>
+    <button class="snipcart-checkout"> Cart</button>
+  </header>
+
+  <main>
+    <div class="product">
+      <h2>Cool T-shirt</h2>
+      <img src="https://via.placeholder.com/300x300" alt="T-shirt">
+      <p>$20</p>
+      <button 
+        class="snipcart-add-item"
+        data-item-id="tshirt1"
+        data-item-name="Cool T-shirt"
+        data-item-price="20.00"
+        data-item-url="/"
+        data-item-description="A comfy T-shirt for everyday wear">
+        Add to cart
+      </button>
+    </div>
+  </main>
+
+  <div hidden id="snipcart" data-api-key="YOUR_PUBLIC_API_KEY"></div>
+</body>
+</html>

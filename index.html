@@ -17,19 +17,26 @@
     header {
       background-color: #222;
       color: #fff;
-      padding: 20px;
+      padding: 15px 20px;
       text-align: center;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 2em;
+      margin: 10px 0;
+      font-size: 1.8em;
+    }
+
+    header img {
+      max-width: 150px;
+      height: auto;
+      display: block;
+      margin: 0 auto 10px auto;
     }
 
     main {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
       padding: 20px;
       max-width: 1200px;
       margin: 0 auto;
@@ -38,35 +45,35 @@
     .product {
       background-color: #fff;
       padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
       text-align: center;
       transition: transform 0.2s, box-shadow 0.2s;
     }
 
     .product:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
     }
 
     .product img {
       width: 100%;
       height: auto;
-      max-height: 200px;
+      max-height: 180px;
       object-fit: cover;
-      border-radius: 5px;
+      border-radius: 8px;
       margin-bottom: 10px;
     }
 
     .product h2 {
-      font-size: 1.2em;
+      font-size: 1.1em;
       margin: 10px 0;
     }
 
     .product p {
-      font-size: 1em;
+      font-size: 0.95em;
       color: #333;
-      margin: 10px 0;
+      margin: 8px 0;
     }
 
     .call-button {
@@ -80,18 +87,37 @@
       transition: background-color 0.2s;
       text-decoration: none;
       display: inline-block;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     .call-button:hover {
       background-color: #1e7e34;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.5em;
+      }
+
+      main {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 15px;
+      }
+
+      .product img {
+        max-height: 150px;
+      }
     }
   </style>
 </head>
 
 <body>
   <header>
+    <img src="https://raw.githubusercontent.com/kvisheh/mr.polish/refs/heads/main/mr.polish.png" alt="Company Logo">
     <h1>پولیش و واکس حرفه ای خودرو</h1>
-    <img src="https://raw.githubusercontent.com/kvisheh/mr.polish/refs/heads/main/mr.polish.png">
   </header>
 
   <main>

@@ -9,25 +9,27 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #ffffff;
+      background-color: #ffffff; /* page background white */
       margin: 0;
       padding: 0;
     }
 
     header {
-      background-color: #222;
-      color: #fff;
+      background-color: #ffffff; /* header background white */
+      color: #222222; /* dark title color */
       padding: 15px 20px;
       text-align: center;
+      border-bottom: 1px solid #ddd; /* optional subtle border */
     }
 
     header h1 {
       margin: 10px 0;
       font-size: 1.8em;
+      color: #222222; /* ensure text is dark */
     }
 
     header img {
-      max-width: 100px;
+      max-width: 100px; /* logo size */
       height: auto;
       display: block;
       margin: 0 auto 10px auto;
@@ -61,8 +63,8 @@
 
     .product img {
       width: 100%;
-      height: auto; /* remove max-height */
-      object-fit: contain; /* ensure full image is shown */
+      height: auto;
+      object-fit: contain;
       border-radius: 8px;
       margin-bottom: 10px;
       flex-shrink: 0;
@@ -71,6 +73,7 @@
     .product h2 {
       font-size: 1.1em;
       margin: 10px 0;
+      color: #222222;
     }
 
     .product p {
@@ -92,13 +95,14 @@
       display: inline-block;
       width: 100%;
       box-sizing: border-box;
-      margin-top: auto; /* push button to bottom if card grows */
+      margin-top: auto;
     }
 
     .call-button:hover {
       background-color: #1e7e34;
     }
 
+    /* Mobile adjustments */
     @media (max-width: 480px) {
       header h1 {
         font-size: 1.5em;
@@ -111,7 +115,7 @@
       }
 
       .product img {
-        max-height: none; /* remove max height for mobile */
+        max-height: none;
       }
     }
   </style>
